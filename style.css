@@ -1,0 +1,347 @@
+/* 头部样式 */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(228, 8, 151, 0.1);
+    z-index: 1000;
+}
+
+.indexBanner {
+    position: relative;
+    margin-top: 60px; /* 调整距离 */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 500;
+}
+
+.indexBanner .title {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.indexBanner .line {
+    width: 350px;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.indexBanner .content {
+    font-size: 18px;
+    text-align: center;
+}
+
+.indexBanner .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.indexBanner .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* 服务样式 */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services ul li {
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services ul li img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.services ul li h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services ul li p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* 关于我们样式 */
+.about {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    .services ul {
+        flex-wrap: wrap;
+    }
+
+    .services ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .contact img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.aui-footer-list {
+    /* width: 14%; */
+    padding: 0 2.6%;
+    /* float: left; */
+}
+
+.aui-footer-title {
+    margin-bottom: 15px;
+    line-height: 32px;
+    font-size: 15px;
+    color: #dddee2;
+    /* width: 34%; */
+    /* text-align: center; */
+    border-bottom: 2px solid #00b5e5;
+}
+
+.aui-footer-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aui-footer-list ul li {
+    /* width: fit-content; */
+    margin-bottom: 12px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.aui-footer-list ul li a {
+    font-size: 12px;
+    color: #ddd;
+    transition: all 0.3s;
+}
+
+.aui-footer-code {
+    width: 120px;
+    height: 120px;
+    float: right;
+}
+
+.aui-footer-code img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+.aui-footer-ewm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 123px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {}
+
+.wechat,
+.xueba {
+    width: 18%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .wechat,
+    .xueba {
+        display: none;
+    }
+}
+
+.index-button>div {
+    width: 24%;
+    height: 15%;
+    /*background-color: red;*/
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.index-button .button {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #0a5484;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    float: left;
+    font-size: 22px;
+    padding: 14px;
+    width: 163px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.index-button .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.index-button .button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.index-button .button:hover span {
+    padding-right: 25px;
+}
+
+.index-button .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.index-button .buttonto {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    color: #0a5484;
+    text-align: center;
+    float: right;
+    font-size: 22px;
+    padding: 14px;
+    width: 163px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.index-button .buttonto span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.index-button .buttonto span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.index-button .buttonto:hover span {
+    padding-right: 25px;
+}
+
+.index-button .buttonto:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .index-button>div {
+        display: none;
+    }
+}
